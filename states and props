@@ -1,0 +1,17 @@
+State:
+What is it? Internal data within a component that can change over time.
+Example: A counter that updates when you click a button.
+Usage:
+javascript
+Copy code
+const [count, setCount] = useState(0);
+Props:
+What is it? External data passed to a component from its parent.
+Example: Setting the initial value of a counter via a prop.
+Usage:
+javascript
+Copy code
+function Counter({ initialCount }) {
+    const [count, setCount] = useState(initialCount);
+}
+State is local and mutable; props are external and immutable. Together, they allow for dynamic and interactive components in React.
