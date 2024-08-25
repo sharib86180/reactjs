@@ -1,0 +1,24 @@
+React Components Overview
+React components are the modular building blocks of a React application, allowing you to break down the UI into reusable parts. There are two main types of components:
+
+1. Functional Components
+What is it? A simple JavaScript function that returns JSX (UI).
+Usage: Lightweight, easy to write, often used with React Hooks.
+Example:
+javascript
+Copy code
+function Greeting() {
+    return <h1>Hello, World!</h1>;
+}
+2. Class Components
+What is it? A more feature-rich component defined as a class.
+Usage: Can manage local state and lifecycle methods.
+Example:
+javascript
+Copy code
+class Greeting extends React.Component {
+    render() {
+        return <h1>Hello, World!</h1>;
+    }
+}
+Functional components are preferred in modern React for simplicity, while class components are useful for older patterns and managing complex behaviors.
